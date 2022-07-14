@@ -1,0 +1,62 @@
+{
+	"env": {
+		"browser": true,
+		"es2021": true
+	},
+	"extends": [
+		"eslint:recommended",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:react/recommended"
+	],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaVersion": "latest"
+	},
+	"plugins": [
+		"@typescript-eslint"
+	],
+	"rules": {
+		"indent": [
+			"warn",
+			"tab"
+		],
+		"linebreak-style": [
+			"warn",
+			"unix"
+		],
+		"quotes": [
+			"warn",
+			"double"
+		],
+		"semi": [
+			"error",
+			"always"
+		],
+		"dot-location": [
+			"warn",
+			"property"
+		],
+		// Remove o erro de scope de React in JSX, erro deprecated
+		"react/jsx-uses-react": "off",
+		"react/react-in-jsx-scope": "off",
+		//
+		"max-statements-per-line": "warn",
+		"space-before-blocks": "warn",
+		"newline-before-return": "warn",
+		"newline-after-var": "warn",
+		"no-unused-expressions": "warn",
+		"newline-per-chained-call": [ // Opcional
+			"warn",
+			{
+				"ignoreChainWithDepth": 4 // Valor padrão: 2
+			}
+		],
+		"no-multiple-empty-lines": "warn",
+		"no-trailing-spaces": "warn",
+		"line-comment-position": "warn",
+		"capitalized-comments": "warn",
+		"spaced-comment": "warn",
+		"space-infix-ops": "warn",
+		"eol-last": "warn"
+	}
+}
